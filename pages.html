@@ -19,9 +19,9 @@
         <ul class="nav-links">
             
             <li class="item-menu">
-                <a href="#" class="icones">
-                        <i class="bi bi-houses"></i>
-                    <span class="text-list">
+                <a href="#" class="home icones">
+                        <i class="bi bi-houses home"></i>
+                    <span class="text-list home">
                         Home
                     </span>
                 </a>
@@ -29,9 +29,9 @@
             </li>
 
             <li class="item-menu">
-                <a href="#" class="icones">
-                    <i class="bi bi-file-bar-graph"></i>
-                    <span class="text-list">
+                <a href="#" class="icones dashboard">
+                    <i class="bi bi-file-bar-graph dashboard"></i>
+                    <span class="text-list dashboard">
                         Dashboard
                     </span>
                 </a>
@@ -39,9 +39,9 @@
             </li>
             <li class="item-menu">
                 <div class="icon-li">
-                <a href="#" class="icones">
-                        <i class="bi bi-card-list"></i>
-                    <span class="text-list">
+                <a href="#" class="icones Cliente">
+                        <i class="bi bi-card-list Cliente"></i>
+                    <span class="text-list Cliente">
                         Cliente
                         <i class="bi bi-arrow-down-short"></i>
                 </a>
@@ -56,9 +56,9 @@
             </li>
             <li class="item-menu">
                 <div class="icon-li">
-                <a href="#" class="icones">
-                        <i class="bi bi-box-seam"></i>
-                    <span class="text-list">
+                <a href="#" class="icones Estoque">
+                        <i class="bi bi-box-seam Estoque"></i>
+                    <span class="text-list Estoque">
                         Estoque
                         <i class="bi bi-arrow-down-short"></i>
                 </a>
@@ -72,9 +72,9 @@
             </li>
             <li class="item-menu">
                 <div class="icon-li">
-                <a href="#" class="icones">
-                        <i class="bi bi-currency-exchange"></i>
-                    <span class="text-list">
+                <a href="#" class="icones Financeiro">
+                        <i class="bi bi-currency-exchange Financeiro"></i>
+                    <span class="text-list Financeiro">
                         Financeiro
                         <i class="bi bi-arrow-down-short"></i>
                 </a>
@@ -89,6 +89,26 @@
             
         </ul>
     </nav>
+
+    <div id="conteudo">
+
+        
+        
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" 
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    </script>
+
+    <script>
+
+        $(".home").click(function(){
+
+            $("#conteudo").load("Pages/home.html");
+
+    });
+
+    </script>
 
 </body>
 </html>
