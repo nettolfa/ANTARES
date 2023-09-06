@@ -22,7 +22,6 @@ cepInput.addEventListener("keyup", (e =>{
 });
 
 const getEndereco = async (cep) =>{
-
     const apiURL = `https://viacep.com.br/ws/${cep}/json/`;
     const response = await fetch(apiURL);
     const data = await response.json;
