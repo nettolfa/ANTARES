@@ -92,24 +92,47 @@
     </nav>
 
     <div id="conteudo">
-
-        
         
     </div>
+
 
     <script src="https://code.jquery.com/jquery-3.7.1.min.js" 
         integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
     </script>
 
     <script>
-
         $(".home").click(function(){
-
-            $("#conteudo").load("Pages/home.html");
-
+        $("#conteudo").load("Pages/home.html");
     });
+    </script>
+
+    <script>
+        $(".dashboard").click(function(){
+        $("#conteudo").load("Pages/dashboard.html");
+});
+</script>
+
+    <script>
+        $(".cliente").click(function(){
+        $("#conteudo").load("Pages/cliente.html");
+});
 
     </script>
+
+    <script>
+        $(".estoque").click(function(){
+        $("#conteudo").load("Pages/estoque.html");
+
+});
+    </script>
+
+    <script>
+        $(".financeiro").click(function(){
+        $("#conteudo").load("Pages/financeiro.html");
+
+});
+    </script>
+    
 
 </body>
 </html>

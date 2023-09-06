@@ -13,62 +13,59 @@
 
         <div class="row mb-3">
 
-            <div class="form-float">
+            <div class="form-floating col-8 col-sm-4 mb-3 m-sm-0">
 
                 <input type="text"
-                class="form-controle"
+                class="form-control"
                 id="cep" placeholder="Digite o seu CEP"
                 minlength="8" maxlength="8"
                 required>
                 <label for="cep">Digite o seu cep</label>
 
             </div>
+        </div>
 
-            <div class="row">
+            <div class="row mb-3">
                 
-            <div class="form-float col-12 col-sm-6">
+            <div class="form-floating col-8 col-sm-4 mb-3 m-sm-0">
 
                 <input type="text"
-                class="form-controle"
+                class="form-control"
                 id="rua" placeholder="Rua"
                 minlength="8" maxlength="8"
                 required disabled>
                 <label for="rua">Rua</label>
             </div>
-            </div>
+  
 
-            <div class="row">
-
-            <div class="form-float col-12 col-sm-6">
+            <div class="form-floating col-8 col-sm-4 mb-3 m-sm-0">
 
                 <input type="text"
-                class="form-controle"
+                class="form-control"
                 id="numero" 
                 placeholder="Digite o número da sua residência"
                 minlength="8" maxlength="8"
-                required disabled>
+                required>
                 <label for="numero">Digite o número da sua residência</label>
             </div>
             </div>
             
-            <div class="row">
-            <div class="form-float col-12 col-sm-6">
+            <div class="row mb-3">
+            <div class="form-floating col-8 col-sm-4 mb-3 m-sm-0">
 
                 <input type="text"
-                class="form-controle"
+                class="form-control"
                 id="complemento" 
                 placeholder="Digite o complemento"
                 minlength="8" maxlength="8"
-                required disabled>
+                required>
                 <label for="complemento">Digite o complemento</label>
             </div>
-            </div>
-
-            <div class="row">
-            <div class="form-float col-12 col-sm-6">
+ 
+            <div class="form-floating col-8 col-sm-4 mb-3 m-sm-0">
 
                 <input type="text"
-                class="form-controle"
+                class="form-control"
                 id="bairro" 
                 placeholder="Bairro"
                 minlength="8" maxlength="8"
@@ -77,20 +74,21 @@
             </div>
             </div>
 
-            <div class="row">
-            <div class="form-float col-12 col-sm-6">
+            <div class="row mb-3">
+            <div class="form-floating col-8 col-sm-4 mb-3 m-sm-0">
 
                 <input type="text"
-                class="form-controle"
+                class="form-control"
                 id="cidade" 
                 placeholder="Cidade"
                 minlength="8" maxlength="8"
                 required disabled>
                 <label for="cidade">Digite sua Cidade</label>
             </div>
-            </div>
+            
+            <div class="form-floating col-8 col-sm-4 mb-3 m-sm-0">
 
-            <select id="estado" name="estado" 
+            <select id="estado" class="form-select" name="estado" 
             required disable>
                 <option selected>Estado</option>
                 <option value="AC">Acre</option>
@@ -122,8 +120,13 @@
                 <option value="TO">Tocantins</option>
                 <option value="EX">Estrangeiro</option>
             </select>
+        </div>
+        </div>
 
             <div class="form-button">
             <button id="btn-salvar" class="btn btn-primary"
             type="submit">Cadastrar</button>
+
+            </form>
+
         </div>
