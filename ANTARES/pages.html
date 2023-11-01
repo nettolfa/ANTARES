@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Antares</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="shortcut icon" href="assets/hurricane.svg" type="image/x-icon">
+    <link rel="stylesheet" href="CSS/page.css">
+</head>
+<body>
+    
+    <nav>
+        <div class="expandir">
+            <i class="bi bi-hurricane"></i>
+            <span class="text-list">ANTARES</span>
+        </div>
+
+        <ul class="nav-links">
+            
+            <li class="item-menu">
+                <a href="#" class="home icones">
+                        <i class="bi bi-houses home"></i>
+                    <span class="text-list home">
+                        Home
+                    </span>
+                </a>
+
+            </li>
+
+            <li class="item-menu">
+                <a href="#" class="icones dashboard">
+                    <i class="bi bi-file-bar-graph dashboard"></i>
+                    <span class="text-list dashboard">
+                        Dashboard
+                    </span>
+                </a>
+
+            </li>
+            <li class="item-menu">
+                <div class="icon-li">
+                <a href="#" class="icones Cliente">
+                        <i class="bi bi-card-list Cliente"></i>
+                    <span class="text-list Cliente">
+                        Cliente
+                        <i class="bi bi-arrow-down-short"></i>
+                </a>
+                <ul class="sub-menu">
+
+                <li><a href="#">Consultar Clientes</a></li>
+                <li><a href="#">Cadastrar Cliente</a></li>
+
+                </ul>
+
+            </div>
+            </li>
+            <li class="item-menu">
+                <div class="icon-li">
+                <a href="#" class="icones Estoque">
+                        <i class="bi bi-box-seam Estoque"></i>
+                    <span class="text-list Estoque">
+                        Estoque
+                        <i class="bi bi-arrow-down-short"></i>
+                </a>
+                <ul class="sub-menu">
+
+                <li><a href="#">Consultar Produto</a></li>
+                <li><a href="#">Cadastrar Produto</a></li>
+
+                </ul>
+                </div>
+            </li>
+            <li class="item-menu">
+                <div class="icon-li">
+                <a href="#" class="icones Financeiro">
+                        <i class="bi bi-currency-exchange Financeiro"></i>
+                    <span class="text-list Financeiro">
+                        Financeiro
+                        <i class="bi bi-arrow-down-short"></i>
+                </a>
+                <ul class="sub-menu">
+
+                <li><a href="#">Planejamento Financeiro</a></li>
+                <li><a href="#">Contabilidade</a></li>
+
+                </ul>
+            </div>
+            </li>
+            
+        </ul>
+    </nav>
+
+    <div id="conteudo">
+        
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" 
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    </script>
+
+    <script>
+        $(".home").click(function(){
+        $("#conteudo").load("Pages/home.html");
+    });
+    </script>
+
+    <script>
+        $(".dashboard").click(function(){
+        $("#conteudo").load("Pages/dashboard.html");
+});
+</script>
+
+    <script>
+        $(".cliente").click(function(){
+        $("#conteudo").load("Pages/cliente.html");
+});
+
+    </script>
+
+    <script>
+        $(".estoque").click(function(){
+        $("#conteudo").load("Pages/estoque.html");
+
+});
+    </script>
+
+    <script>
+        $(".financeiro").click(function(){
+        $("#conteudo").load("Pages/financeiro.html");
+
+});
+    </script>
+    
+
+</body>
+</html>
